@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="../list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <title>Show up</title>
+    <link rel="icon" href="img/l.png">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <div class="logo">
+                <img src="img/LOGO.png" alt="logo">
+            </div>
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Search for a movie..." onkeyup="searchMovie()">
+                <span class="material-symbols-outlined">video_search</span>
+            </div>
+
+            <div class="all" id="all">
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li ><a href="/" >Home</a></li>
+                        <li><a href="list" class="active">My List</a></li>
+                        <li>
+                            <div class="account" id="account" onclick="openlogin()">
+                              <% if (user && user.photos) { %>
+                                <img src="<%= user.photos[0].value %>" alt="User Image" id="user-image" class="profile-image">
+                              <% } else { %>
+                                <span class="material-symbols-outlined" id="default-icon">account_circle</span>
+                              <% } %>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+            <span class="material-symbols-outlined" id="menu" >
+                menu
+                </span>
+           
+        </header>
+    </div>
+    <div class="container">
+        <div class="section">
+            <div id="noResults" style="display: none;">No results found.</div>
+            <h1 id="secno" >My List :</h1>
+
+            <div class="list">
+                <div class="movie">
+                    
+                    <div class="picture">
+                        <a href="./Video page/video_serie">
+                            <div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div><img src="movies/fantasy kdrama/The Judge From Hell KDrama Poster.jpg" alt=""></a>
+                        <div class="details">
+                            <h2>The Judge From Hell</h2>
+                            <div class="likes">
+                                <p>1k</p>
+                                <p>7.2</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="story">
+                            <p>The story of The Judge from Hell follows Kang Bit-na, an elite judge who is secretly a demon, tasked with condemning wrongdoers to hell. She crosses paths with Han Da-on, a talented but emotionally scarred detective. This drama is Park Shin-hye's long-awaited return to the small screen.</p>
+                        </div>
+                        <div class="button">
+                            <button>watch Trailer</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="movie">
+                    
+                    <div class="picture">
+                        <a href="./Video page/video_serie"><div class="overlay">
+                            <span class="material-symbols-outlined btn">play_circle</span>
+                        </div><img src="movies/fantasy kdrama/Extraordinary you 2019.jpg" alt=""></a>
+                        <div class="details">
+                            <h2>Extraordinary You</h2>
+                            <div class="likes">
+                                <p>1k</p>
+                                <p>7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="right">
+                        <div class="story">
+                            <p>A girl who finds out that she is in fact a supporting character in a web comic and decides to change her fate. The story of a girl who finds out that she is in fact a supporting character in a web comic and decides to change her fate.</p>
+                        </div>
+                        <div class="button">
+                            <button>watch Trailer</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="movie">
+                    
+                    <div class="picture">
+                        <a href="./Video page/video_serie"><div class="overlay">
+                            <span class="material-symbols-outlined btn">play_circle</span>
+                        </div><img src="movies/fantasy movies/The Lord of the Rings_ The Fellowship of the Ring.jpg" alt=""></a>
+                        <div class="details">
+                            <h2>The Lord of the Rings_ The Fellowship of the Ring</h2>
+                            <div class="likes">
+                                <p>1k</p>
+                                <p>7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="right">
+                        <div class="story">
+                            <p>The film tells the story of young hobbit Frodo Baggins who, accompanied by eight companions, embarks on a journey to destroy the One Ring in the fires of Mount Doom.</p>
+                        </div>
+                        <div class="button">
+                            <button>watch Trailer</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+                <div class="movie">
+                    
+                    <div class="picture">
+                        <a href="./Video page/video_serie"><div class="overlay">
+                            <span class="material-symbols-outlined btn">play_circle</span>
+                        </div><img src="movies/animation/Moana❤.jpg" alt=""></a>
+                        <div class="details">
+                            <h2>The Lord of the Rings_ The Fellowship of the Ring</h2>
+                            <div class="likes">
+                                <p>1k</p>
+                                <p>7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="right">
+                        <div class="story">
+                            <p>A young woman uses her navigational talents to set sail for a fabled island. Joining her on the adventure is her hero, the legendary demi-god Maui.</p>
+                        </div>
+                        <div class="button">
+                            <button>watch Trailer</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+
+                <div class="movie">
+                    
+                    <div class="picture">
+                        <a href="./Video page/video_serie"><div class="overlay">
+                            <span class="material-symbols-outlined btn">play_circle</span>
+                        </div><img src="movies/science fiction movies/004ce9b9-4516-41c7-9abd-5b4a33980e46.jpg" alt=""></a>
+                        <div class="details">
+                            <h2>The Invesible Man</h2>
+                            <div class="likes">
+                                <p>1k</p>
+                                <p>7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="right">
+                        <div class="story">
+                            <p>When Cecilia's abusive ex takes his own life and leaves her his fortune, she suspects his death was a hoax. As a series of coincidences turn lethal, Cecilia works to prove that she is being hunted by someone nobody can see.</p>
+                        </div>
+                        <div class="button">
+                            <button>watch Trailer</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+
+                <div class="movie">
+                    
+                    <div class="picture">
+                        <a href="./Video page/video_serie"><div class="overlay">
+                            <span class="material-symbols-outlined btn">play_circle</span>
+                        </div><img src="movies/science fiction movies/Arrival (2016).jpg" alt=""></a>
+                        <div class="details">
+                            <h2>Arrival</h2>
+                            <div class="likes">
+                                <p>1k</p>
+                                <p>7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="right">
+                        <div class="story">
+                            <p>Linguist Louise Banks leads a team of investigators when gigantic spaceships touch down around the world. As nations teeter on the verge of global war, Banks and her crew must find a way to communicate with the extraterrestrial visitors.</p>
+                        </div>
+                        <div class="button">
+                            <button>watch Trailer</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+
+
+
+
+            </div>
+
+                
+            </div>
+
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/LOGO-removebg-preview.png" alt="logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="Film">Film</a></li>
+                    <li><a href="Serie">Series</a></li>
+                    <li ><a href="Anime">Anime</a></li>
+                    <li><a href="Animation">Animation</a></li>
+                    <li><a href="list" class="active">My List</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>                
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Show up . By Chaima Mansouri and Chahd Touaibia  . ITC </p>
+        </div>
+    </footer>
+
+    <div class="login" id="login-modal" style=" display:none">
+        <div class="login-box">
+            <button class="close-btn" id="close-btn">&times;</button>
+            <h2>Login Or Signup</h2>
+            <a href="/auth/google" class="login-button google"> Google</a>
+            <a href="/auth/facebook" class="login-button facebook"> Facebook</a>
+        </div>
+       </div>
+
+       <div class="login" id="login-modal" style=" display:none">
+        <div class="login-box">
+            <button class="close-btn" id="close-btn">&times;</button>
+            <h2>Login Or Signup</h2>
+            <a href="/auth/google" class="login-button google"> Google</a>
+            <a href="/auth/facebook" class="login-button facebook"> Facebook</a>
+        </div>
+       </div>
+
+    <script src="../forAll.js"></script>
+</body>
+</html>

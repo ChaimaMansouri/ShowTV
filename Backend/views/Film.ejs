@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="../home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/l.png">
+    <title>Show up</title>
+</head>
+<body>
+    <div class="home">
+        <div class="header">
+            <header>
+                <div class="logo">
+                    <img src="img/LOGO.png" alt="logo">
+                </div>
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="Search for a movie..." onkeyup="searchMovie()">
+                    <span class="material-symbols-outlined">video_search</span>
+                </div>
+
+                <div class="all" id="all">
+                <div class="nav">
+                    <nav>
+                        <ul>
+                            <li ><a href="/" >Home</a></li>
+                            <li><a href="Film" class="active">Film</a></li>
+                            <li><a href="Serie">Series</a></li>
+                            <li><a href="Anime">Anime</a></li>
+                            <li><a href="Animation">Animation</a></li>
+                            <li><a href="list">My List</a></li>
+                            <li>
+                                <div class="account" id="account" onclick="openlogin()">
+                                  <% if (user && user.photos) { %>
+                                    <img src="<%= user.photos[0].value %>" alt="User Image" id="user-image" class="profile-image">
+                                  <% } else { %>
+                                    <span class="material-symbols-outlined" id="default-icon">account_circle</span>
+                                  <% } %>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+                <span class="material-symbols-outlined" id="menu" >
+                    menu
+                    </span>
+                
+            </header>
+        </div>
+
+        <div class="main">
+           
+            <div class="Second-part">
+                <div id="noResults" style="display: none;">No results found.</div>
+                
+                 <H1   id="secno4" class="H1">Film</H1>
+
+
+                 <div class="section">
+                    <div class="sec">
+                        <div class="leftarrow">
+                            
+                        </div>
+                        <div class="title" id="secno">
+                            <h1>Adventure</h1>
+                        <span class="material-symbols-outlined">arrow_forward_ios</span>
+                        </div>
+                    </div>
+
+                    <div class="list">
+
+                        <div class="movie">
+                            
+                            <a href="#" onclick="selectSeason()"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div>
+                            <img src="movies/pics and videos/Harry potter/MIGHTYPRINT Harry Potter and the Sorcerer's Stone 20th Anniversary – Durable 17” x 24 Wall Art – NOT Made of Paper – Officially Licensed Collectible.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>Harry Potter</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div>
+                            <img src="movies/adventure movies/208eb765-4d5d-4f6c-bfc3-3bca4ba9bb85.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>The mummy</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film">
+                                <div class="overlay">
+                                    <span class="material-symbols-outlined btn">play_circle</span>
+                                </div>
+                                <img src="movies/adventure movies/cd17ae58-6768-405f-bcae-00402f69d106.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>The maze runner</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div>
+                            <img src="movies/adventure movies/Cheetos_ Chester's Watchlist.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>Fall</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div>
+                            <img src="movies/adventure movies/Journey to the Center of the Earth 2008.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>Journey to the Center of the Earth</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film">
+                                <div class="overlay">
+                                    <span class="material-symbols-outlined btn">play_circle</span>
+                                </div>
+                                <img src="movies/adventure movies/Jungle Cruise.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>Jungle Cruise</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div>
+                            <img src="movies/adventure movies/Jurassic World (2015).jpg" alt=""></a>
+                            <div class="details">
+                                <h2>Jurassic World</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div>
+                            <img src="movies/adventure movies/Uncharted.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>Uncharted</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+                 <div class="section">
+                    <div class="sec">
+                        <div class="leftarrow">
+                            
+                        </div>
+                        <div class="title" id="secno1">
+                            <h1>Sience fiction</h1>
+                        <span class="material-symbols-outlined">arrow_forward_ios</span>
+                        </div>
+                    </div>
+
+                    <div class="list ">
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div>
+                            <img src="movies/science fiction movies/004ce9b9-4516-41c7-9abd-5b4a33980e46.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>The invisible man</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film">
+                                <div class="overlay">
+                                    <span class="material-symbols-outlined btn">play_circle</span>
+                                </div>
+                                <img src="movies/science fiction movies/ae262d60-ab8c-4a34-9cb4-3e22a826b17a.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>The walking dead</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div>
+                            <img src="movies/science fiction movies/Arrival (2016).jpg" alt=""></a>
+                            <div class="details">
+                                <h2>Arrival</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div>
+                            <img src="movies/science fiction movies/i am legend movie.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>I am legend</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film">
+                                <div class="overlay">
+                                    <span class="material-symbols-outlined btn">play_circle</span>
+                                </div>
+                                <img src="movies/science fiction movies/The 5th Wave.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>The 5th Wave</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div>
+                            <img src="movies/science fiction movies/The Adam Project movie watch for free.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>The Adam Project</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div>
+                            <img src="movies/science fiction movies/Постер фильма Стекло.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>Glass</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                 <div class="section">
+                    <div class="sec">
+                        <div class="leftarrow">
+                            
+                        </div>
+                        <div class="title" id="secno2">
+                            <h1>Comedy</h1>
+                        <span class="material-symbols-outlined">arrow_forward_ios</span>
+                        </div>
+                    </div>
+                    
+                    <div class="list">
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film">
+                                <div class="overlay">
+                                    <span class="material-symbols-outlined btn">play_circle</span>
+                                </div><img src="movies/comedy movies/0d6f00cf-5ed2-4e9c-9921-c7b7a1f94154.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>nanny macphee</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div><img src="movies/comedy movies/9652ba92-83a0-474d-82e0-b4f45b3018ba.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>Unfortune events</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div><img src="movies/comedy movies/home alone.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>home alone</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="movie">
+                            
+                            <a href="./Video page/video_film"><div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div><img src="movies/comedy movies/Samedi gala Charlie la chocolaterie 🍫🍫🍫🍬🍬🍬.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>Weli Wonka</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="movie">
+                           
+                            <a href="./Video page/video_film"> <div class="overlay">
+                                <span class="material-symbols-outlined btn">play_circle</span>
+                            </div>
+                            <img src="movies/comedy movies/téléchargement.jpg" alt=""></a>
+                            <div class="details">
+                                <h2>The pacifier</h2>
+                                <div class="likes">
+                                    <p>1k</p>
+                                    <p>7.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                        
+                    </div>
+                    
+
+
+                  
+
+                    
+                    <div class="section">
+                        <div class="sec">
+                            <div class="leftarrow">
+                                
+                            </div>
+                            <div class="title" id="secno3">
+                                <h1>Mestry</h1>
+                            <span class="material-symbols-outlined">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                       
+                        <div class="list">
+
+                            <div class="movie">
+                                
+                                <a href="./Video page/video_film"><div class="overlay">
+                                    <span class="material-symbols-outlined btn">play_circle</span>
+                                </div>
+                                <img src="movies/mestry/Gladiator.jpg" alt=""></a>
+                                <div class="details">
+                                    <h2>Gladiator</h2>
+                                    <div class="likes">
+                                        <p>1k</p>
+                                        <p>7.2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="movie">
+                                
+                                <a href="./Video page/video_film">
+                                    <div class="overlay">
+                                        <span class="material-symbols-outlined btn">play_circle</span>
+                                    </div>
+                                    <img src="movies/mestry/Prisoners - film 2013.jpg" alt=""></a>
+                                <div class="details">
+                                    <h2>Prisoners</h2>
+                                    <div class="likes">
+                                        <p>1k</p>
+                                        <p>7.2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="movie">
+                                
+                                <a href="./Video page/video_film"><div class="overlay">
+                                    <span class="material-symbols-outlined btn">play_circle</span>
+                                </div>
+                                <img src="movies/mestry/7653727b-e5cf-4d5c-84cc-a7a5a54c46af.jpg" alt=""></a>
+                                <div class="details">
+                                    <h2>John wick</h2>
+                                    <div class="likes">
+                                        <p>1k</p>
+                                        <p>7.2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="movie">
+                                
+                                <a href="./Video page/video_film">
+                                    <div class="overlay">
+                                        <span class="material-symbols-outlined btn">play_circle</span>
+                                    </div><img src="movies/mestry/Catch Me If You Can (2002).jpg" alt=""></a>
+                                <div class="details">
+                                    <h2>Catch Me If You Can</h2>
+                                    <div class="likes">
+                                        <p>1k</p>
+                                        <p>7.2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="movie">
+                                
+                                <a href="./Video page/video_film">
+                                    <div class="overlay">
+                                        <span class="material-symbols-outlined btn">play_circle</span>
+                                    </div><img src="movies/mestry/John Wick_ Chapter 2 (2017).jpg" alt=""></a>
+                                <div class="details">
+                                    <h2>John wick 2</h2>
+                                    <div class="likes">
+                                        <p>1k</p>
+                                        <p>7.2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="movie">
+                                
+                                <a href="./Video page/video_film"><div class="overlay">
+                                    <span class="material-symbols-outlined btn">play_circle</span>
+                                </div>
+                                <img src="movies/mestry/44a3a802-647c-45fc-a4e4-4e9e086dc78c.jpg" alt=""></a>
+                                <div class="details">
+                                    <h2>Split</h2>
+                                    <div class="likes">
+                                        <p>1k</p>
+                                        <p>7.2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="section">
+                        <div class="sec">
+                            <div class="leftarrow">
+                                
+                            </div>
+                            <div class="title" id="last">
+                                <h1>Romantic</h1>
+                            <span class="material-symbols-outlined">arrow_forward_ios</span>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <div class="movie">
+                                
+                                <a href="./Video page/video_film">
+                                    <div class="overlay">
+                                        <span class="material-symbols-outlined btn">play_circle</span>
+                                    </div><img src="movies/romance movies/0edbda16-a875-466f-bde3-8e376f41bef2.jpg" alt=""></a>
+                                <div class="details">
+                                    <h2>ChaCha Real Smooth</h2>
+                                    <div class="likes">
+                                        <p>1k</p>
+                                        <p>7.2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+                            <div class="movie">
+                                
+                                <a href="./Video page/video_film">
+                                    <div class="overlay">
+                                        <span class="material-symbols-outlined btn">play_circle</span>
+                                    </div>
+                                    <img src="movies/romance movies/4fe947bf-cc44-419f-b8ec-1e3a76b92050.jpg" alt=""></a>
+                                <div class="details">
+                                    <h2>Espaco</h2>
+                                    <div class="likes">
+                                        <p>1k</p>
+                                        <p>7.2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="movie">
+                                
+                                <a href="./Video page/video_film">
+                                    <div class="overlay">
+                                        <span class="material-symbols-outlined btn">play_circle</span>
+                                    </div><img src="movies/romance movies/ebf00051-e83c-4324-8ae1-a023e2328ed0.jpg" alt=""></a>
+                                <div class="details">
+                                    <h2>Flipped</h2>
+                                    <div class="likes">
+                                        <p>1k</p>
+                                        <p>7.2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="movie">
+                                
+                                <a href="./Video page/video_film"><div class="overlay">
+                                    <span class="material-symbols-outlined btn">play_circle</span>
+                                </div><img src="movies/romance movies/La La Land.jpg" alt=""></a>
+
+                                <div class="details">
+                                    <h2>La La Land</h2>
+                                    <div class="likes">
+                                        <p>1k</p>
+                                        <p>7.2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="movie">
+                                
+                                <a href="./Video page/video_film"><div class="overlay">
+                                    <span class="material-symbols-outlined btn">play_circle</span>
+                                </div>
+                                <img src="movies/romance movies/The Best Winter Movies to Watch When It's Too Cold to Go Outside.jpg" alt=""></a>
+                                <div class="details">
+                                    <h2>The holiday</h2>
+                                    <div class="likes">
+                                        <p>1k</p>
+                                        <p>7.2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/LOGO-removebg-preview.png" alt="logo">
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li ><a href="/" >Home</a></li>
+                        <li><a href="Film" class="active">Film</a></li>
+                        <li><a href="Serie">Series</a></li>
+                        <li><a href="Anime">Anime</a></li>
+                        <li><a href="Animation">Animation</a></li>
+                        <li><a href="list">My List</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Show up . By Chaima Mansouri and Chahd Touaibia  . ITC </p>
+            </div>
+        </footer>
+        
+        
+        
+        
+    </div>
+    <div class="login" id="login-modal" style=" display:none">
+        <div class="login-box">
+            <button class="close-btn" id="close-btn">&times;</button>
+            <h2>Login Or Signup</h2>
+            <a href="/auth/google" class="login-button google"> Google</a>
+            <a href="/auth/facebook" class="login-button facebook"> Facebook</a>
+        </div>
+    </div>
+
+    <div class="card">
+    <div class="seasons-card">
+       
+        <ul>
+          <a href="./Harry/video_hr1"><li>Season 1</li></a>
+          <a href="./Harry/video_hr2"><li>Season 2</li></a>
+          <a href="./Harry/video_hr3"><li>Season 3</li></a>
+          <a href="./Harry/video_hr4"><li>Season 4</li></a>
+          <a href="./Harry/video_hr5"><li>Season 5</li></a>
+          <a href="./Harry/video_hr6"><li>Season 6</li></a>
+          <a href="./Harry/video_hr7"><li>Season 7</li></a>
+        </ul>
+        <div class="heade">
+            <button onclick="closeCard()">Close</button>
+          </div>
+    </div>
+   </div>
+   </div>
+   <script>
+    function closeCard() {
+        document.querySelector('.card').style.display = 'none';
+      }
+      
+    function selectSeason() {
+        document.querySelector('.card').style.display = 'block';
+    }
+   </script>
+    <script src="../forAll.js"></script>
+    
+</body>
+</html>
